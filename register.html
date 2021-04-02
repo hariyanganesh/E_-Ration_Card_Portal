@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Account registration form</title>
+    <link href='Register.css' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <div class="main-block" style="margin-top: 100px;">
+    <form action="Sign_up.php" method="POST" id = "Sign_Up_Detail_Form">
+      <h1>Create a free account</h1>
+      <fieldset>
+        <legend>
+          <h3>Account Details</h3>
+        </legend>
+        <div  class="account-details">
+          <div><label>Aadhar card no.*</label><input type="text" name = "aadhar_no_1" required></div>
+          <div><label>Password*</label><input type="password" name="password1" required></div>
+          <div><label>Repeat Aadhar Card No *</label><input type="text" name="aadhar_no_2" required></div>
+          <div><label>Repeat Password*</label><input type="password" name = "password2" required></div>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>
+          <h3>Personal Details</h3>
+        </legend>
+        <div  class="personal-details">
+          <div>
+            <div><label for = "name">Name*</label><input type = "text" name = "name" required></div>
+            <div><label for = "phone">Phone*</label><input type = "text" name = "phone" required></div>
+            <div><label for = "location">Location: </label><input type = "text" name = "location" placeholder="Eg: Borivali, Mumbai, Maharashtra" required></div>
+          </div>
+          <div>
+            <div>
+              <label>Gender:   </label>
+              <div class="gender">
+                <input type="radio" value="Male" id="male" name="gender" required/>
+                <label for="male" class="radio">Male</label>
+                <input type="radio" value="Female" id="female" name="gender" required/>
+                <label for="female" class="radio">Female</label>
+              </div>
+            </div>
+            <div class="birthdate">
+              <label>Date Of Birth*</label>
+              <div class="bdate-block">
+                <input type="date" name = "dob" style="width: fit-content;">
+              </div>
+            </div><br>
+          </div>
+        </div>
+      <button type="submit" href="/" form = "Sign_Up_Detail_Form">Submit</button>
+    </form>
+    </div> 
+  </body>
+</html>
