@@ -28,7 +28,7 @@
             $password_db  =$pass_val->fetch_assoc()['USER_PASSWORD'];
 
             if($mod_pass === $password_db)
-                header("Location: Login.html");
+                header("Location: homepage.html");
             else
                 echo "Password IS Wrong";
         }
